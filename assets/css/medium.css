@@ -1,0 +1,28 @@
+html, body {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+  opacity: unset;
+  margin: 0;
+}
+
+header .nav-pills .nav-link {
+  font-size: 0.875rem;
+  color: #292929;
+}
+
+header .nav-pills .nav-link.btn-black {
+  color: #FFFFFF;
+  border-radius: 1.25rem;
+}
+
+.btn-black {
+  background: #191919 !important;
+  color: #FFFFFF;
+}
+
+.border-black2 {
+  border-color: #292929 !important;
+}
+/*# sourceMappingURL=medium.css.map */

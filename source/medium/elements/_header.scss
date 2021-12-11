@@ -1,0 +1,14 @@
+// Header
+header{
+    .nav-pills{
+        .nav-link{
+            font-size: 0.875rem;
+            color: $colorBlack2;
+
+            &.btn-black{
+                color: $colorWhite;
+                border-radius: 1.25rem;
+            }
+        }
+    }
+}
