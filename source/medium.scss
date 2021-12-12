@@ -1,6 +1,15 @@
 // Main
 html, body{
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 hr{
@@ -14,3 +23,6 @@ hr{
 @import "medium/elements/header";
 @import "medium/elements/button";
 @import "medium/elements/helper";
+
+// Contents
+@import "medium/contents/index";
