@@ -3,3 +3,11 @@
     background: $colorBlack!important;
     color: $colorWhite;
 }
+
+.btn-white{
+    padding: .5rem 1rem;
+    background: $colorWhite!important;
+    color: $colorBlack;
+    border: 1px solid $colorBlack;
+    border-radius: 1.25rem;
+}

@@ -1,5 +1,15 @@
+@charset "UTF-8";
 html, body {
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 hr {
@@ -17,12 +27,108 @@ header .nav-pills .nav-link.btn-black {
   border-radius: 1.25rem;
 }
 
+.banner {
+  background-color: #C4E2FF;
+}
+
+.banner .banner-wrapper {
+  background-position: bottom 1px right 2rem;
+  background-image: url(https://miro.medium.com/max/279/4*BIK9VGjeCj2TaTDw4id2nA.png);
+  background-repeat: no-repeat;
+}
+
+.banner .banner-wrapper .caption-wrapper {
+  padding: 1.875rem 0 1.875rem 4rem;
+  width: 34.375rem;
+}
+
+.banner .banner-wrapper .caption-wrapper .title {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.banner .banner-wrapper .caption-wrapper .sub-title {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
 .btn-black {
   background: #191919 !important;
   color: #FFFFFF;
 }
 
+.btn-white {
+  padding: .5rem 1rem;
+  background: #FFFFFF !important;
+  color: #191919;
+  border: 1px solid #191919;
+  border-radius: 1.25rem;
+}
+
 .border-black2 {
   border-color: #292929 !important;
+}
+
+.section-trending {
+  padding: 2.5rem 0 1rem;
+}
+
+.section-trending .title {
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-trending .content ol.trending-list {
+  list-style: none;
+  counter-reset: trending-counter;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-trending .content ol.trending-list li {
+  counter-increment: trending-counter;
+  display: flex;
+}
+
+.section-trending .content ol.trending-list li::before {
+  content: "0" counter(trending-counter);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  line-height: 1.75rem;
+  color: #E6E6E6;
+}
+
+.section-trending .content ol.trending-list .trending-wrapper {
+  padding-bottom: 1.5rem;
+}
+
+.section-trending .content ol.trending-list .trending-wrapper .author-wrapper a {
+  font-size: 0.8125rem;
+  color: #292929;
+}
+
+.section-trending .content ol.trending-list .trending-wrapper .title {
+  padding-bottom: 0;
+  font-size: 0.875rem;
+  text-transform: unset;
+  color: #292929;
+}
+
+.section-trending .content ol.trending-list .trending-wrapper .info-wrapper span {
+  font-size: 13px;
+  color: #757575;
+}
+
+.section-trending .content ol.trending-list .trending-wrapper .info-wrapper span:first-child::before {
+  content: '';
+}
+
+.section-trending .content ol.trending-list .trending-wrapper .info-wrapper span::before {
+  content: ' · ';
 }
 /*# sourceMappingURL=medium.css.map */

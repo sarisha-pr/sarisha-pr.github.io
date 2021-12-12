@@ -1,0 +1,70 @@
+// Index
+
+.section-trending{
+    padding: 2.5rem 0 1rem;
+
+    .title{
+        padding-bottom: 1rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .content{
+        ol.trending-list{
+            list-style: none;
+            counter-reset: trending-counter;
+            display: flex;
+            flex-wrap: wrap;
+
+            li{
+                counter-increment: trending-counter;
+                display: flex;
+
+                &::before{
+                    content: "0" counter(trending-counter);
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                    line-height: 1.75rem;
+                    color: $colorGray;
+                }
+            }
+
+            .trending-wrapper{
+                padding-bottom: 1.5rem;
+
+                .author-wrapper{
+                    a{
+                        font-size: 0.8125rem;
+                        color: $colorBlack2;
+                    }
+                }
+
+                .title{
+                    padding-bottom: 0;
+                    font-size: 0.875rem;
+                    text-transform: unset;
+                    color: $colorBlack2;
+                }
+
+                .info-wrapper{
+                    span{
+                        font-size: 13px;
+                        color: $colorBlack3;
+
+                        &:first-child{
+                            &::before{
+                                content: '';
+                            }
+                        }
+
+                        &::before{
+                            content: ' · ';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
