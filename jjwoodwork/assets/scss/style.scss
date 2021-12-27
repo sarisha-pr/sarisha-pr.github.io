@@ -1,0 +1,29 @@
+// Main
+html, body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    opacity: unset;
+    margin: 0;
+}
+
+// Config
+@import "configs/colors";
+
+// Elements
+@import "elements/header";
+@import "elements/button";
+@import "elements/helper";
+
+// Contents
+@import "contents/index";

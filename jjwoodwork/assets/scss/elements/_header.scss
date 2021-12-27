@@ -1,0 +1,34 @@
+.navbar{
+    .navbar-brand{
+        color: $colorWhite;
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $colorWhite;
+                
+
+                @media (min-width: 768px){
+                    display: inline-block;
+                    position: relative;
+
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        transform: scaleX(0); //hide initially
+                        background: $colorWhite; //same with text color
+                        transition: transform 0.25s ease-out;
+                        left: 0px;
+                        top: 2rem;
+                    }
+
+                    &:hover:after{
+                        transform: scaleX(1); //show the hidden underline
+                    }
+                }
+            }
+        }
+    }
+}
