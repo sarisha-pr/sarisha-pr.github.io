@@ -1,0 +1,21 @@
+.banner{
+    .banner-wrapper{
+        position: relative;
+
+        img{
+            height: 40rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .caption-overlay{
+            position: absolute;
+            top: 28rem;
+            left: 4rem;
+            padding: 2rem;
+            background: $colorBrown2;
+            opacity: .75;
+            width: 25rem;
+        }
+    }
+}

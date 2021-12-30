@@ -1,0 +1,10 @@
+.btn-primary{
+    background: $colorBrown1;
+    border-color: $colorBrown1;
+
+    &:hover{
+        border-color: $colorBrown1;
+        background: $colorWhite;
+        color: $colorBrown1;
+    }
+}
