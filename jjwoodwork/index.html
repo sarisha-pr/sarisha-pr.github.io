@@ -22,11 +22,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="menu-expand">
                 <ul class="navbar-nav mb-lg-0 mr-0">
                     <li class="nav-item text-capitalize">
-                        <a class="nav-link" href="#">products</a>
+                        <a class="nav-link" href="#product">products</a>
                     </li>
 
                     <li class="nav-item text-capitalize">
-                        <a class="nav-link" href="#">contact us</a>
+                        <a class="nav-link" href="#contact">contact us</a>
                     </li>
                 </ul>
             </div>
@@ -36,19 +36,19 @@
     <section class="banner">
         <div class="banner-wrapper">
             <img src="./assets/images/banner.jpg" alt="jj woodwork banner">
-            <!-- <div class="caption-overlay">
+            <div class="caption-overlay">
                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris magna ante, iaculis vitae tempor ac, scelerisque a turpis.</p>
-            </div> -->
+            </div>
         </div>
     </section>
 
-    <section class="section-product">
+    <section class="section-product" id="product">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="title-heading text-center">Our Products</h2>
 
-                    <div class="product-list">
+                    <div class="product-list overflow-hidden">
                         <div class="slider">
                             <div class="card">
                                 <a href="#">
@@ -112,21 +112,21 @@
         </div>
     </section>
 
-    <section class="section-contact-us">
+    <section class="section-contact-us" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15777.793137997449!2d115.1884526!3d-8.6488435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c14023268639600!2sJJ%20Woodwork%20Bali!5e0!3m2!1sen!2sid!4v1640879032276!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <h2 class="title-heading text-center">Contact us!</h2>
                     <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta placeat, impedit ducimus blanditiis assumenda! Nemo quae quod nobis ipsum deleniti repudiandae enim quia, quos rerum sequi vel. Qui, sequi!</p>
 
-                    <p class="mb-3"><a href="https://g.page/jj_woodwork_bali?share" target="_blank"><i class="fas fa-map-marker-alt"></i> Gang. Walet III A No.17, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80118</a></p>
-                    <p class="mb-3"><i class="fas fa-phone-square-alt"></i> +6281338645329</p>
-                    <p class="mb-3"><i class="fab fa-whatsapp"></i> +6281338645329</p>
-                    <p class="mb-3"><a href="https://www.facebook.com/JJWoodDecor/" target="_blank"><i class="fab fa-facebook-square"></i> JJ woodwork</a></p>
-                    <p class="mb-3"><a href="https://www.instagram.com/jj_woodwork_bali" target="_blank"><i class="fab fa-instagram"></i> @jj_woodwork_bali</a></p>
+                    <p class="mb-3"><i class="fas fa-map-marker-alt"></i> <a href="https://g.page/jj_woodwork_bali?share" target="_blank" class="text-anchor">Gang. Walet III A No.17, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80118</a></p>
+                    <p class="mb-3"><i class="fas fa-phone-square-alt"></i> <a href="tel:+6281338645329" class="text-anchor">+6281338645329</a></p>
+                    <p class="mb-3"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281338645329" class="text-anchor">+6281338645329</a></p>
+                    <p class="mb-3"><i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/JJWoodDecor/" target="_blank" class="text-anchor">JJ woodwork</a></p>
+                    <p class="mb-3"><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/jj_woodwork_bali" target="_blank" class="text-anchor">@jj_woodwork_bali</a></p>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
             $('.section-product .product-list .slider').slick({
                 dots: true,
                 centerMode: true,
-                centerPadding: '60px',
+                // centerPadding: '60px',
                 slidesToShow: 5,
                 responsive: [
                     {
