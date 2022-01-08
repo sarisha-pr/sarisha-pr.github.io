@@ -1,3 +1,20 @@
-.bg-brown1{
+//Helper
+
+//Background color
+//---------------------------------------------
+.bg-brown1 {
     background: $colorBrown1;
 }
+//---------------------------------------------
+
+//Text
+//---------------------------------------------
+.text-anchor {
+    color: $colorBrown1;
+    text-decoration: underline;
+
+    &:hover{
+        color: $colorBrown2;
+    }
+}
+//---------------------------------------------

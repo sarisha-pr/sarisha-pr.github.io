@@ -6,6 +6,10 @@
             height: 40rem;
             width: 100%;
             object-fit: cover;
+
+            @include breakpoint-down(md) {
+                height: 22rem;
+            }
         }
 
         .caption-overlay{
@@ -16,6 +20,16 @@
             background: $colorBrown2;
             opacity: .75;
             width: 25rem;
+
+            @include breakpoint-down(md) {
+                top: 11rem;
+            }
+
+            @include breakpoint-down(sm) {
+                top: 7rem;
+                left: 1rem;
+                width: 17.5rem;
+            }
         }
     }
 }
