@@ -5,11 +5,14 @@ import Advice from "./pages/Advice.tsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/advice",
+    element: <Advice />,
   },
 ]);
 
