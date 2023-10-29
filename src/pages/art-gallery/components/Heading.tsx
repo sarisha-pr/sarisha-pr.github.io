@@ -11,7 +11,8 @@ const Heading: React.FC<HeadingProps> = ({ size, className, children }) => {
 
   switch (size) {
     case "xl":
-      classSize = "text-[6rem] leading-[0.91]";
+      classSize =
+        "text-[3.75rem] md:text-[4.375rem] xxl:text-[6rem] leading-[0.91]";
       break;
     case "l":
       classSize = "text-[4.375rem] leading-none";

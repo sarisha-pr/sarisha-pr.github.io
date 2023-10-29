@@ -20,6 +20,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
       href={href}
       className={`
         group/button 
+        max-w-[16.25rem]
         relative flex text-center py-6 overflow-hidden 
         font-big-shoulders font-extrabold text-[1.25rem] tracking-[0.18em]
         ${className ?? ""}
