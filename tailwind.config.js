@@ -14,7 +14,14 @@ export default {
     fontFamily: {},
 
     extend: {
-      colors: {},
+      colors: {
+        artGallery: {
+          gold: "#D5966C",
+          // white: "#FFFFFF",
+          black: "#151515",
+          grey: "#444444",
+        },
+      },
     },
   },
 
